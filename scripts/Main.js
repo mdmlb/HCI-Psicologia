@@ -142,7 +142,7 @@ const subniveles = [
 ];
 
 const velocidad = [
- 800, 600, 400, 200
+ 800, 600, 400, 300
 ];
 
 const puntaje = [
