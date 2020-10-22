@@ -9,16 +9,16 @@ let puntajeActual;
 
 const niveles = [
     {
-        src: './resources/Neutral1.JPG',
+        src: './resources/Neutral1.webp',
     },
     {
-        src: './resources/Neutral2.JPG',
+        src: './resources/Neutral2.webp',
     },
     {
-        src: './resources/Neutral3.JPG',
+        src: './resources/Neutral3.webp',
     },
     {
-        src: './resources/Neutral4.JPG',
+        src: './resources/Neutral4.webp',
     },
 ];
 
@@ -26,118 +26,118 @@ const subniveles = [
     //EMOCIONES NIVEL 1
     {
         emocion: 'felicidad',
-        src: './resources/Felicidad1.JPG',
+        src: './resources/Felicidad1.webp',
     },
     {
         emocion: 'miedo',
-        src: './resources/Miedo1.JPG',
+        src: './resources/Miedo1.webp',
     },
     {
         emocion: 'sorpresa',
-        src: './resources/Sorpresa1.JPG',
+        src: './resources/Sorpresa1.webp',
     },
     {
         emocion: 'asco',
-        src: './resources/Asco1.JPG',
+        src: './resources/Asco1.webp',
     },
     {
         emocion: 'ira',
-        src: './resources/Enojo1.JPG',
+        src: './resources/Enojo1.webp',
     },
     {
         emocion: 'desprecio',
-        src: './resources/Desprecio1.JPG',
+        src: './resources/Desprecio1.webp',
     },
     {
         emocion: 'tristeza',
-        src: './resources/Tristeza1.JPG',
+        src: './resources/Tristeza1.webp',
     },
     //EMOCIONES NIVEL 2
     {
         emocion: 'sorpresa',
-        src: './resources/Sorpresa2.JPG',
+        src: './resources/Sorpresa2.webp',
     },
     {
         emocion: 'asco',
-        src: './resources/Asco2.JPG',
+        src: './resources/Asco2.webp',
     },
     {
         emocion: 'felicidad',
-        src: './resources/Felicidad2.JPG',
+        src: './resources/Felicidad2.webp',
     },
     {
         emocion: 'desprecio',
-        src: './resources/Desprecio2.JPG',
+        src: './resources/Desprecio2.webp',
     },
     {
         emocion: 'miedo',
-        src: './resources/Miedo2.JPG',
+        src: './resources/Miedo2.webp',
     },
     {
         emocion: 'tristeza',
-        src: './resources/Tristeza2.JPG',
+        src: './resources/Tristeza2.webp',
     },
     {
         emocion: 'ira',
-        src: './resources/Enojo2.JPG',
+        src: './resources/Enojo2.webp',
     },
     //EMOCIONES NIVEL 3
     {
         emocion: 'asco',
-        src: './resources/Asco3.JPG',
+        src: './resources/Asco3.webp',
     },
     {
         emocion: 'desprecio',
-        src: './resources/Desprecio3.JPG',
+        src: './resources/Desprecio3.webp',
     },
     {
         emocion: 'sorpresa',
-        src: './resources/Sorpresa3.JPG',
+        src: './resources/Sorpresa3.webp',
     },
     {
         emocion: 'felicidad',
-        src: './resources/Felicidad3.JPG',
+        src: './resources/Felicidad3.webp',
     },
     {
         emocion: 'miedo',
-        src: './resources/Miedo3.JPG',
+        src: './resources/Miedo3.webp',
     },
     {
         emocion: 'ira',
-        src: './resources/Enojo3.JPG',
+        src: './resources/Enojo3.webp',
     },
     {
         emocion: 'tristeza',
-        src: './resources/Tristeza3.JPG',
+        src: './resources/Tristeza3.webp',
     },
     //EMOCIONES NIVEL 4
     {
         emocion: 'tristeza',
-        src: './resources/Tristeza4.JPG',
+        src: './resources/Tristeza4.webp',
     },
     {
         emocion: 'felicidad',
-        src: './resources/Felicidad4.JPG',
+        src: './resources/Felicidad4.webp',
     },
     {
         emocion: 'desprecio',
-        src: './resources/Desprecio4.JPG',
+        src: './resources/Desprecio4.webp',
     },
     {
         emocion: 'ira',
-        src: './resources/Enojo4.JPG',
+        src: './resources/Enojo4.webp',
     },
     {
         emocion: 'asco',
-        src: './resources/Asco4.JPG',
+        src: './resources/Asco4.webp',
     },
     {
         emocion: 'sorpresa',
-        src: './resources/Sorpresa4.JPG',
+        src: './resources/Sorpresa4.webp',
     },
     {
         emocion: 'miedo',
-        src: './resources/Miedo4.JPG',
+        src: './resources/Miedo4.webp',
     },
 ];
 
