@@ -1,7 +1,7 @@
 //JUEGO
 let contador = 0;
 let nivel = 0;
-let aciertos = 2;
+let aciertos = 4;
 let emocionActual;
 let nivelActual;
 let emocionCorrecta;
@@ -146,7 +146,7 @@ const velocidad = [
 ];
 
 const puntaje = [
-    2,3,4,5
+    4,6,8,10
 ];
 
 const img = document.querySelector('.juego__imagen');
@@ -206,12 +206,12 @@ function btnHandle(event) {
     //Con
     const puntajeFinal = document.querySelector('.resul__t3');
 
-    puntajeFinal.innerHTML= 'Tu puntaje fue de ' + aciertos + '%';
+    puntajeFinal.innerHTML= 'Tu puntaje fue de ' + aciertos/2 + '%';
 
     //QUE TAL
     const numerodeimagen = document.querySelector('.juego__contador');
 
-    numerodeimagen.innerHTML= contador +1  + '/28';
+    numerodeimagen.innerHTML= contador + 1  + '/28';
 
 }
 
