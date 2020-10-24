@@ -25,7 +25,6 @@
 
 .juego__btn {
   width: 70px;
-  margin: 11px;
   cursor: pointer;
 }
 
@@ -37,23 +36,29 @@
 
 .juego__selec {
   height: 272px;
-  width: 451px;
+  width: 381px;
   background-color: white;
   padding: 10px 30px;
   border-radius: 40px;
   -webkit-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
-  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
 }
 
 .juego__imagen {
