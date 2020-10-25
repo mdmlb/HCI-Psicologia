@@ -4,12 +4,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $azulclaro;
+    background-color: #37595F;
     justify-content: center;
 }
 
+.juego__fondo {
+    display: flex;
+    flex-direction: row;
+    background-color: $azulclaro;
+    width: 92%;
+    height: 92%;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
 .juego__contenedor {
-    width: 32%;
+    width: 35%;
     margin-right: 75px;
 }
 
@@ -26,6 +38,7 @@
 
 
 .juego__selec {
+    position: relative;
     height: 272px;
     width: 381px;
     background-color: white;
@@ -42,14 +55,17 @@
 
 .juego__imagen {
     width:100%;
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(90%);
     border-radius: 40px;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
 }
 
 .juego__contador{
-    color: white;
+    color: #37595F;
     font-size: 36px;
     position: absolute;
     right: 248px;
+    background-color: $amarillo;
+    padding: 10px 20px;
+    border-radius: 20px;
 }

@@ -12,14 +12,36 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #A3C2C7;
+  background-color: #37595F;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
+.juego__fondo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #A3C2C7;
+  width: 92%;
+  height: 92%;
+  border-radius: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
 .juego__contenedor {
-  width: 32%;
+  width: 35%;
   margin-right: 75px;
 }
 
@@ -35,6 +57,7 @@
 }
 
 .juego__selec {
+  position: relative;
   height: 272px;
   width: 381px;
   background-color: white;
@@ -63,18 +86,21 @@
 
 .juego__imagen {
   width: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) brightness(90%);
+          filter: grayscale(100%) brightness(90%);
   border-radius: 40px;
   -webkit-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
 .juego__contador {
-  color: white;
+  color: #37595F;
   font-size: 36px;
   position: absolute;
   right: 248px;
+  background-color: #FFE606;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 .button {

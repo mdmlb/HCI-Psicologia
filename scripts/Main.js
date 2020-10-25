@@ -176,7 +176,7 @@ const btns = document.querySelectorAll('.juego__btn');
 function btnHandle(event) {
     const src = event.target.getAttribute('alt');
 
-    ////////
+    //AUMENTAR CONTADOR Y NIVEL
     contador++;
     if (contador % 7 == 0) {
         nivel++;
@@ -184,16 +184,15 @@ function btnHandle(event) {
     }
     cambiarImagen();
 
-    ///////
+    //MOSTRAR PANTALLA DE RESULTADOS
     if (contador == 28){
 
         const resultados = document.querySelector('.resul');
 
         resultados.classList.add('resul--mostrar');
-        //console.log("llego");
     }
 
-    ///////
+    //CONTAR ACIERTOS
     emocionCorrecta = subniveles[contador - 1];
     if (contador < 28) {
         if ('' + src === '' + emocionCorrecta.emocion) {
@@ -203,12 +202,12 @@ function btnHandle(event) {
         }
     }
 
-    //Con
+    //MOSTRAR EL PUNTAJE FINAL EN LA PANTALLA DE RESULTADOS
     const puntajeFinal = document.querySelector('.resul__t3');
 
     puntajeFinal.innerHTML= 'Tu puntaje fue de ' + aciertos/2 + '%';
 
-    //QUE TAL
+    //MOSTRAR EL NIVEL ACTUAL EN LA PANTALLA
     const numerodeimagen = document.querySelector('.juego__contador');
 
     numerodeimagen.innerHTML= contador + 1  + '/28';
