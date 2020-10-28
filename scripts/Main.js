@@ -2,6 +2,10 @@
 let contador = 0;
 let nivel = 0;
 let aciertos = 4;
+let nivel1Puntaje = 0;
+let nivel2Puntaje = 0;
+let nivel3Puntaje = 0;
+let nivel4Puntaje = 0;
 let emocionActual;
 let nivelActual;
 let emocionCorrecta;
@@ -142,28 +146,28 @@ const subniveles = [
 ];
 
 const velocidad = [
- 800, 600, 400, 300
+    800, 600, 400, 300
 ];
 
 const puntaje = [
-    4,6,8,10
+    4, 6, 8, 10
 ];
 
 const img = document.querySelector('.juego__imagen');
-function cambiarImagen(){
-    if(contador < 28){
+function cambiarImagen() {
+    if (contador < 28) {
         emocionActual = subniveles[contador];
         nivelActual = niveles[nivel];
         velocidadActual = velocidad[nivel];
         puntajeActual = puntaje[nivel];
-        
+
         setTimeout(function () {
             img.setAttribute('src', emocionActual.src);
         }, 1000);
 
         setTimeout(function () {
             img.setAttribute('src', nivelActual.src);
-        }, velocidadActual+1000);
+        }, velocidadActual + 1000);
 
     }
 }
@@ -185,7 +189,7 @@ function btnHandle(event) {
     cambiarImagen();
 
     //MOSTRAR PANTALLA DE RESULTADOS
-    if (contador == 28){
+    if (contador == 28) {
 
         const resultados = document.querySelector('.resul');
 
@@ -194,23 +198,40 @@ function btnHandle(event) {
 
     //CONTAR ACIERTOS
     emocionCorrecta = subniveles[contador - 1];
-    if (contador < 28) {
+    if (contador < 29) {
         if ('' + src === '' + emocionCorrecta.emocion) {
-            
-            aciertos+=puntajeActual;
-            console.log(aciertos);
+
+            if (contador < 8) {
+                nivel1Puntaje += 4;
+            }
+
+            if (contador >= 8 && contador < 15) {
+                nivel2Puntaje += 6;
+            }
+
+            if (contador >= 15 && contador < 22) {
+                nivel3Puntaje += 8;
+            }
+
+            if (contador >= 22) {
+                nivel4Puntaje += 10;
+                console.log(nivel4Puntaje)
+            }
+
+            aciertos += puntajeActual;
+
         }
     }
 
     //MOSTRAR EL PUNTAJE FINAL EN LA PANTALLA DE RESULTADOS
     const puntajeFinal = document.querySelector('.resul__t3');
 
-    puntajeFinal.innerHTML= 'Tu puntaje fue de ' + aciertos/2 + '%';
+    puntajeFinal.innerHTML = 'Tu puntaje fue de ' + aciertos / 2 + '%';
 
     //MOSTRAR EL NIVEL ACTUAL EN LA PANTALLA
     const numerodeimagen = document.querySelector('.juego__contador');
 
-    numerodeimagen.innerHTML= contador + 1  + '/28';
+    numerodeimagen.innerHTML = contador + 1 + '/28';
 
 }
 
@@ -219,4 +240,8 @@ btns.forEach(function (elem, index) {
 });
 
 
-//ACIERTOS ES LA VARIABLE DEL PUNTUAJE
+//aciertos ES LA VARIABLE DEL PUNTUAJE GLOBAL
+//nivel1Puntaje ES LA VARIABLE DEL PUNTAJE DEL NIVEL 1
+//nivel2Puntaje ES LA VARIABLE DEL PUNTAJE DEL NIVEL 2
+//nivel3Puntaje ES LA VARIABLE DEL PUNTAJE DEL NIVEL 3
+//nivel4Puntaje ES LA VARIABLE DEL PUNTAJE DEL NIVEL 4
