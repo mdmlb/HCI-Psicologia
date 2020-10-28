@@ -1,7 +1,7 @@
 //JUEGO
 let contador = 0;
 let nivel = 0;
-let aciertos = 4;
+let aciertos = -2;
 let nivel1Puntaje = 0;
 let nivel2Puntaje = 0;
 let nivel3Puntaje = 0;
@@ -219,6 +219,7 @@ function btnHandle(event) {
             }
 
             aciertos += puntajeActual;
+            console.log(aciertos);
 
         }
     }
